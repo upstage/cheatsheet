@@ -1,0 +1,29 @@
+{
+  "name": "toolkit-cheatsheet",
+  "description": "Cheatsheet boilerplate. Created for the new lesscss.org website, based on Shopify Cheat Sheet by Mark Dunkley.",
+  "version": "0.0.1",
+  "author": "Jon Schlinkert",
+  "contributors": [
+    {
+      "name": "Jon Schlinkert",
+      "url": "http://github.com/jonschlinkert"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/assemble/toolkit-cheatsheet.git"
+  },
+  "bugs": {
+    "url": "https://github.com/assemble/toolkit-cheatsheet/issues"
+  },
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "devDependencies": {
+    "assemble": "0.3.6",
+    "grunt": "0.4.0",
+    "grunt-contrib-copy": "0.4.0",
+    "grunt-contrib-less": "0.5.0",
+    "grunt-contrib-handlebars": "0.5.4"
+  }
+}

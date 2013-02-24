@@ -1,0 +1,43 @@
+    {{#each grid-rows}}
+      <div class="{{row-modifier}}">
+      {{#each grid-columns}}
+        <div class="{{column}}">
+        {{#each accordion}}
+          <div class="panel panel-small">
+            <div class="accordion cheatsheet-accordion" id="{{accordion-id}}">
+              {{#if wiki-href}}<a href="{{wiki-href}}" class="btn btn-primary btn-mini pull-right">Wiki</a>{{/if}}
+              {{#if accordion-title}}<h4 class="accordion-title">{{accordion-title}}</h4>{{/if}}
+              {{#each accordion-groups}}
+              {{#if accordion-section}}
+              <strong class="accordion-section">{{accordion-section}}</strong>
+              {{else}}
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#{{../../accordion-id}}" href="#{{../../accordion-id}}-{{../group-href}}">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right">{{label}}</span>
+                    {{ group-title }}
+                  </a>
+                </dd>
+                <dt id="{{../../accordion-id}}-{{../group-href}}" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    {{{ group-inner }}}
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        \{{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>{{/if}}{{/each}}
+            </div>
+          </div>{{/each}}
+        </div>{{/each}}
+      </div>
+    {{/each}}

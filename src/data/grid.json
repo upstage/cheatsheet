@@ -1,0 +1,54 @@
+{
+  "container": {
+    "rows": [
+      {
+        "spans": [
+          {
+            "columns": 12,
+            "content": {
+              "html": "<h1>Here's the header of the page</h1>"
+            }
+          }
+        ]
+      },
+      {
+        "spans": [
+          {
+            "columns": 3,
+            "content": {
+              "markdown": "\n - item1\n - item2\n - item3"
+            }
+          },
+          {
+            "columns": 3,
+            "content": {
+              "md": "<%= config.content %>/test.md"
+            }
+          },
+          {
+            "columns": 3,
+            "content": {
+              "html": "<a href='http://www.woodwardb.com'>Awesomeness</a>"
+            }
+          }
+        ]
+      },
+      {
+        "spans": [
+          {
+            "columns": 6,
+            "content": {
+              "markdown": "\n###Footer Left\n"
+            }
+          },
+          {
+            "columns": 6,
+            "content": {
+              "markdown": "\n###Footer Right\n"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

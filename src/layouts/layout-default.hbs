@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> {{ page.title }} </title>
+    <!-- webfonts -->
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="{{assets}}/css/bootstrap.css">
+    <link rel="stylesheet" href="{{assets}}/css/{{#if page.stylesheet}}{{ page.stylesheet }}.css{{else}}{{/if}}">
+    <link rel="stylesheet" href="{{assets}}/js/prettify/prettify.css">
+  </head>
+  <body>
+
+    <!-- navbar
+    ========================================== -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <div class="nav-collapse collapse">
+            <ul class="nav">{{#page.links}}
+              <li class="{{active}}"><a href="{{href}}">{{text}}</a></li> {{/page.links}}
+            </ul>
+          </div>{{! /nav-collapse }}
+        </div>
+      </div>
+    </div>
+
+    {{> body }}
+
+
+    <!-- javascript
+    ================================================== -->
+    <script src="{{assets}}/js/prettify/prettify.js"></script>
+    <script src="{{assets}}/js/jquery.js"></script>
+    <script src="{{assets}}/js/bootstrap-collapse.js"></script>
+
+    <!-- simple quickfix for more than one accordion group to stay open at a time -->
+    <script>
+      $(function() {
+        $('.accordion').on('show', function(e) {
+          $(e.target).prev('.accordion-heading').find('.accordion-toggle').addClass('active');
+        });
+
+        $('.accordion').on('hide', function(e) {
+          $(this).find('.accordion-toggle').not($(e.target)).removeClass('active');
+        });
+      });
+   </script>
+
+  </body>
+</html>

@@ -1,0 +1,53 @@
+---
+page:
+  title: Cheatsheet Boilerplate
+  brand: <%= page.title %>
+  stylesheet: cheatsheet
+  links:
+    -
+      href: https://github.com/assemble/assemble
+      text: Assemble
+    -
+      href: https://github.com/assemble/toolkit
+      text: Toolkit
+---
+
+
+{{#grid.container}}
+<div class="container">
+
+  {{#rows}}
+  <div class="row">
+
+    {{#spans}}
+    <div class="span{{columns}}">
+      test
+      {{#content}}
+
+        {{#if html}}{{{html}}}{{/if}}
+        {{#if md}}{{{md md}}}{{/if}}
+        {{#if markdown}}
+          {{#markdown}}
+            {{this.markdown}}
+          {{/markdown}}
+        {{/if}}
+
+      {{/content}}
+
+    </div>
+    {{/spans}}
+
+  </div>
+  {{/rows}}
+
+</div>
+{{/grid.container}}
+
+
+<div class="cheatsheet container-fluid">
+
+  {{#cheatsheet}}
+    {{> cheatsheet-accordion }}
+  {{/cheatsheet}}
+
+</div><!-- /container -->
