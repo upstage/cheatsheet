@@ -1,74 +1,2756 @@
 <!DOCTYPE html>
 <html>
-
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Cheatsheet : Cheatsheet boilerplate. Created for the new lesscss.org website, based on &quot;Shopify Cheat Sheet&quot; by Mark Dunkley" />
+    <title> Cheatsheet Boilerplate </title>
+    <!-- webfonts -->
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Cheatsheet</title>
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/cheatsheet.css">
+    <link rel="stylesheet" href="assets/js/prettify/prettify.css">
   </head>
-
   <body>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/assemble/toolkit-cheatsheet">View on GitHub</a>
-
-          <h1 id="project_title">Cheatsheet</h1>
-          <h2 id="project_tagline">Cheatsheet boilerplate. Created for the new lesscss.org website, based on &quot;Shopify Cheat Sheet&quot; by Mark Dunkley</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/assemble/toolkit-cheatsheet/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/assemble/toolkit-cheatsheet/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Cheatsheet maintained by <a href="https://github.com/assemble">assemble</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
+    <!-- navbar
+    ========================================== -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class=""><a href="https://github.com/assemble/assemble">Assemble</a></li> 
+              <li class=""><a href="https://github.com/assemble/toolkit">Toolkit</a></li> 
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
 
     
+
+
+
+
+
+<div class="cheatsheet container-fluid">
+
+  
+        
+      <div class="row-fluid">
+      
+        <div class="span3">
+        
+          <div class="panel panel-small">
+            <div class="accordion cheatsheet-accordion" id="accordion1">
+              <a href="#" class="btn btn-primary btn-mini pull-right">Wiki</a>
+              <h4 class="accordion-title">Accordion</h4>
+              
+              
+              <strong class="accordion-section">Section Title</strong>
+              
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#accordion1-1">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion1-1" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#accordion1-2">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion1-2" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <strong class="accordion-section">Section Title</strong>
+              
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#accordion1-3">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion1-3" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#accordion1-4">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion1-4" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#accordion1-5">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion1-5" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+            </div>
+          </div>
+          <div class="panel panel-small">
+            <div class="accordion cheatsheet-accordion" id="accordion2">
+              <a href="#" class="btn btn-primary btn-mini pull-right">Wiki</a>
+              <h4 class="accordion-title">Accordion</h4>
+              
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#accordion2-1">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion2-1" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#accordion2-2">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion2-2" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#accordion2-3">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion2-3" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <strong class="accordion-section">Section Title</strong>
+              
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#accordion2-4">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion2-4" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#accordion2-5">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion2-5" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#accordion2-6">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion2-6" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <strong class="accordion-section">Section Title</strong>
+              
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#accordion2-7">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion2-7" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#accordion2-8">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion2-8" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#accordion2-9">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion2-9" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+            </div>
+          </div>
+          <div class="panel panel-small">
+            <div class="accordion cheatsheet-accordion" id="accordion3">
+              <a href="#" class="btn btn-primary btn-mini pull-right">Wiki</a>
+              <h4 class="accordion-title">Accordion</h4>
+              
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#accordion3-1">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion3-1" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#accordion3-2">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion3-2" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#accordion3-3">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion3-3" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+            </div>
+          </div>
+          <div class="panel panel-small">
+            <div class="accordion cheatsheet-accordion" id="accordion4">
+              <a href="#" class="btn btn-primary btn-mini pull-right">Wiki</a>
+              <h4 class="accordion-title">Accordion</h4>
+              
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion4" href="#accordion4-1">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion4-1" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion4" href="#accordion4-2">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion4-2" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion4" href="#accordion4-3">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion4-3" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+            </div>
+          </div>
+          <div class="panel panel-small">
+            <div class="accordion cheatsheet-accordion" id="accordion5">
+              <a href="#" class="btn btn-primary btn-mini pull-right">Wiki</a>
+              <h4 class="accordion-title">Accordion</h4>
+              
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion5" href="#accordion5-1">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion5-1" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion5" href="#accordion5-2">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion5-2" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion5" href="#accordion5-3">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion5-3" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+            </div>
+          </div>
+          <div class="panel panel-small">
+            <div class="accordion cheatsheet-accordion" id="accordion6">
+              <a href="#" class="btn btn-primary btn-mini pull-right">Wiki</a>
+              <h4 class="accordion-title">Accordion</h4>
+              
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion6" href="#accordion6-1">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion6-1" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion6" href="#accordion6-2">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion6-2" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion6" href="#accordion6-3">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion6-3" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion6" href="#accordion6-4">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion6-4" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion6" href="#accordion6-5">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion6-5" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion6" href="#accordion6-6">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion6-6" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+            </div>
+          </div>
+        </div>
+        <div class="span3">
+        
+          <div class="panel panel-small">
+            <div class="accordion cheatsheet-accordion" id="accordion7">
+              <a href="#" class="btn btn-primary btn-mini pull-right">Wiki</a>
+              <h4 class="accordion-title">Accordion</h4>
+              
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion7" href="#accordion7-1">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion7-1" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion7" href="#accordion7-2">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion7-2" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion7" href="#accordion7-3">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion7-3" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion7" href="#accordion7-4">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right">New</span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion7-4" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <strong class="accordion-section">Section Title</strong>
+              
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion7" href="#accordion7-5">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion7-5" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion7" href="#accordion7-6">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion7-6" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion7" href="#accordion7-7">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion7-7" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion7" href="#accordion7-8">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion7-8" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion7" href="#accordion7-9">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion7-9" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+            </div>
+          </div>
+          <div class="panel panel-small">
+            <div class="accordion cheatsheet-accordion" id="accordion8">
+              <a href="#" class="btn btn-primary btn-mini pull-right">Wiki</a>
+              <h4 class="accordion-title">Accordion</h4>
+              
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion8" href="#accordion8-1">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion8-1" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion8" href="#accordion8-2">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion8-2" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion8" href="#accordion8-3">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion8-3" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion8" href="#accordion8-4">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion8-4" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion8" href="#accordion8-5">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion8-5" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion8" href="#accordion8-6">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion8-6" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion8" href="#accordion8-7">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion8-7" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion8" href="#accordion8-8">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion8-8" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+            </div>
+          </div>
+          <div class="panel panel-small">
+            <div class="accordion cheatsheet-accordion" id="accordion9">
+              <a href="#" class="btn btn-primary btn-mini pull-right">Wiki</a>
+              <h4 class="accordion-title">Accordion</h4>
+              
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion9" href="#accordion9-1">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion9-1" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion9" href="#accordion9-2">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion9-2" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion9" href="#accordion9-3">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion9-3" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion9" href="#accordion9-4">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion9-4" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion9" href="#accordion9-5">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion9-5" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion9" href="#accordion9-6">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion9-6" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion9" href="#accordion9-7">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion9-7" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion9" href="#accordion9-8">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion9-8" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion9" href="#accordion9-9">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion9-9" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+            </div>
+          </div>
+        </div>
+        <div class="span3">
+        
+          <div class="panel panel-small">
+            <div class="accordion cheatsheet-accordion" id="accordion10">
+              <a href="#" class="btn btn-primary btn-mini pull-right">Wiki</a>
+              <h4 class="accordion-title">Accordion</h4>
+              
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion10" href="#accordion10-1">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right">New</span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion10-1" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion10" href="#accordion10-2">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion10-2" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion10" href="#accordion10-3">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion10-3" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+            </div>
+          </div>
+          <div class="panel panel-small">
+            <div class="accordion cheatsheet-accordion" id="accordion11">
+              <a href="#" class="btn btn-primary btn-mini pull-right">Wiki</a>
+              <h4 class="accordion-title">Accordion</h4>
+              
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion11" href="#accordion11-1">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right">New</span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion11-1" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion11" href="#accordion11-2">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion11-2" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion11" href="#accordion11-3">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion11-3" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion11" href="#accordion11-4">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion11-4" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion11" href="#accordion11-5">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion11-5" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion11" href="#accordion11-6">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion11-6" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+            </div>
+          </div>
+          <div class="panel panel-small">
+            <div class="accordion cheatsheet-accordion" id="accordion11b">
+              <a href="#" class="btn btn-primary btn-mini pull-right">Wiki</a>
+              <h4 class="accordion-title">Accordion</h4>
+              
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion11b" href="#accordion11b-1">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right">New</span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion11b-1" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion11b" href="#accordion11b-2">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion11b-2" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+            </div>
+          </div>
+          <div class="panel panel-small">
+            <div class="accordion cheatsheet-accordion" id="accordion12">
+              <a href="#" class="btn btn-primary btn-mini pull-right">Wiki</a>
+              <h4 class="accordion-title">Accordion</h4>
+              
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion12" href="#accordion12-1">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion12-1" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion12" href="#accordion12-2">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion12-2" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion12" href="#accordion12-3">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion12-3" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion12" href="#accordion12-4">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion12-4" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <strong class="accordion-section">Section Title</strong>
+              
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion12" href="#accordion12-5">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion12-5" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion12" href="#accordion12-6">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion12-6" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <strong class="accordion-section">Section Title</strong>
+              
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion12" href="#accordion12-7">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion12-7" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion12" href="#accordion12-8">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion12-8" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion12" href="#accordion12-9">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion12-9" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+            </div>
+          </div>
+        </div>
+        <div class="span3">
+        
+          <div class="panel panel-small">
+            <div class="accordion cheatsheet-accordion" id="accordion13">
+              <a href="#" class="btn btn-primary btn-mini pull-right">Wiki</a>
+              <h4 class="accordion-title">Accordion</h4>
+              
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion13" href="#accordion13-1">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion13-1" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion13" href="#accordion13-2">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion13-2" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+            </div>
+          </div>
+          <div class="panel panel-small">
+            <div class="accordion cheatsheet-accordion" id="accordion13b">
+              <a href="#" class="btn btn-primary btn-mini pull-right">Wiki</a>
+              <h4 class="accordion-title">Accordion</h4>
+              
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion13b" href="#accordion13b-1">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion13b-1" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion13b" href="#accordion13b-2">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion13b-2" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+            </div>
+          </div>
+          <div class="panel panel-small">
+            <div class="accordion cheatsheet-accordion" id="accordion14">
+              <a href="#" class="btn btn-primary btn-mini pull-right">Wiki</a>
+              <h4 class="accordion-title">Accordion</h4>
+              
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion14" href="#accordion14-1">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion14-1" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion14" href="#accordion14-2">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion14-2" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion14" href="#accordion14-3">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion14-3" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion14" href="#accordion14-4">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion14-4" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <strong class="accordion-section">Section Title</strong>
+              
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion14" href="#accordion14-5">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion14-5" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion14" href="#accordion14-6">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion14-6" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <strong class="accordion-section">Section Title</strong>
+              
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion14" href="#accordion14-7">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion14-7" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion14" href="#accordion14-8">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion14-8" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion14" href="#accordion14-9">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion14-9" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion14" href="#accordion14-10">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion14-10" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion14" href="#accordion14-11">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion14-11" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion14" href="#accordion14-12">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion14-12" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion14" href="#accordion14-13">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion14-13" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+            </div>
+          </div>
+          <div class="panel panel-small">
+            <div class="accordion cheatsheet-accordion" id="accordion15">
+              <a href="#" class="btn btn-primary btn-mini pull-right">Wiki</a>
+              <h4 class="accordion-title">Accordion</h4>
+              
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion15" href="#accordion15-1">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion15-1" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion15" href="#accordion15-2">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion15-2" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion15" href="#accordion15-3">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion15-3" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <strong class="accordion-section">Section Title</strong>
+              
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion15" href="#accordion15-4">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion15-4" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+              
+              <dl class="accordion-group">
+                <dd class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion15" href="#accordion15-5">
+                    <i class="toggle-chevron"></i>
+                    <span class="label label-success pull-right"></span>
+                    Group
+                  </a>
+                </dd>
+                <dt id="accordion15-5" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="summary">
+                      If this, then do that.
+                    </div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!
+                    <div class="accordion-example">
+                      <code class="code-example">
+                        This example code.
+                      </code>
+                      <code class="code-result">
+                        {{ page.title }}
+                      </code>
+                    </div>
+                  </div>
+                </dt>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="">
+      
+      </div>
+    
+  
+
+</div><!-- /container -->
+
+
+    <!-- javascript
+    ================================================== -->
+    <script src="assets/js/prettify/prettify.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap-collapse.js"></script>
+
+    <!-- simple quickfix for more than one accordion group to stay open at a time -->
+    <script>
+      $(function() {
+        $('.accordion').on('show', function(e) {
+          $(e.target).prev('.accordion-heading').find('.accordion-toggle').addClass('active');
+        });
+
+        $('.accordion').on('hide', function(e) {
+          $(this).find('.accordion-toggle').not($(e.target)).removeClass('active');
+        });
+      });
+   </script>
 
   </body>
 </html>
