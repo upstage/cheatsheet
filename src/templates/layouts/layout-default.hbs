@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title> {{ page.title }} </title>
+    <title> {{ page.title }} &middot; A Toolkit Component</title>
+    <!-- this is a Toolkit component. Learn more at http://github.com/assemble/toolkit -->
     <!-- webfonts -->
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
 
     <!-- stylesheets -->
     <link rel="stylesheet" href="{{assets}}/css/bootstrap.css">
-    <link rel="stylesheet" href="{{assets}}/css/{{#if page.stylesheet}}{{ page.stylesheet }}.css{{else}}{{/if}}">
+    {{#if page.stylesheet}}<link rel="stylesheet" href="{{assets}}/css/{{ page.stylesheet }}">{{/if}}
     <link rel="stylesheet" href="{{assets}}/js/prettify/prettify.css">
   </head>
   <body>
@@ -18,8 +19,15 @@
       <div class="navbar-inner">
         <div class="container-fluid">
           <div class="nav-collapse collapse">
-            <ul class="nav">{{#page.links}}
-              <li class="{{active}}"><a href="{{href}}">{{text}}</a></li> {{/page.links}}
+            <ul class="nav">
+              {{#page.left-links}}
+                <li class="{{active}}"><a href="{{href}}">{{text}}</a></li>
+              {{/page.left-links}}
+            </ul>
+            <ul class="nav pull-right">
+              {{#page.right-links}}
+                <li class="{{active}}"><a href="{{href}}">{{text}}</a></li>
+              {{/page.right-links}}
             </ul>
           </div>{{! /nav-collapse }}
         </div>

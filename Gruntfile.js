@@ -29,12 +29,12 @@ module.exports = function(grunt) {
       },
       pages: {
         options: {
-          layout:   'src/layouts/layout-default.hbs',
-          partials: 'src/partials/**/*.hbs'
+          layout:   'src/templates/layouts/layout-default.hbs',
+          partials: 'src/templates/partials/**/*.hbs'
         },
 
         // Build project pages. ('dest': ['source'])
-        files: { '.' : ['src/pages/*.hbs'] }
+        files: { '.' : ['src/templates/pages/*.hbs'] }
       }
     },
 
@@ -42,10 +42,10 @@ module.exports = function(grunt) {
     less: {
       compile: {
         options: {
-          paths: ['src/less', 'src/less/bootstrap'] },
+          paths: ['src/styles', 'src/styles/bootstrap'] },
         files: {
       //    'assets/css/bootstrap.css':  ['src/less/bootstrap/bootstrap.less'],
-          'assets/css/cheatsheet.css': ['src/less/cheatsheet.less'],
+          'assets/css/cheatsheet.css': ['src/styles/cheatsheet.less'],
         }
       }
     },
