@@ -1,3 +1,120 @@
+.accordion-panel {
+  min-height: 20px;
+  padding: 9px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #e7e7e7;
+  border-radius: 3px;
+}
+.accordion {
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+.accordion-group {
+  margin: 0;
+  border: 1px solid #e1e1e1;
+  border-radius: 0;
+}
+.accordion-group + .accordion-group {
+  border-top: none;
+}
+.accordion-heading {
+  margin: 0;
+  border-bottom: none;
+}
+.accordion-heading .accordion-toggle {
+  color: black;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 4px 15px;
+  background: #eeeeee;
+}
+.accordion-heading .accordion-toggle:hover,
+.accordion-toggle.active,
+.accordion-toggle.active:hover {
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  background: #2db0da;
+}
+.accordion-title {
+  font-family: "Source Sans Pro";
+  font-weight: 600;
+  margin-top: 0;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 4px;
+  margin-bottom: 4px;
+}
+.accordion-section {
+  display: block;
+  font-size: 14px;
+  font-family: "Source Sans Pro";
+  color: #444;
+  padding: 3px 0 5px;
+  margin-top: 6px;
+  border-top: 1px solid #ddd;
+}
+.accordion-section:empty {
+  display: none;
+}
+.accordion-title + .accordion-section {
+  border-top: none;
+}
+.accordion-inner {
+  font-weight: normal;
+  background: #d9edf7;
+  border-top: 1px solid #e1e1e1;
+}
+.accordion-inner .summary {
+  display: block;
+  color: #075d8d;
+  margin: -10px -15px 10px;
+  padding: 6px 15px;
+  background: #bee1e4;
+}
+.collapse {
+  -webkit-transition: height 0.08s ease;
+  -moz-transition: height 0.08s ease;
+  -ms-transition: height 0.08s ease;
+  -o-transition: height 0.08s ease;
+  transition: height 0.08s ease;
+}
+.accordion-toggle .toggle-chevron:before {
+  float: right;
+  display: inline-block;
+  content: "\e114";
+  font-size: 10px;
+  font-family: 'Glyphicons Halflings';
+  font-weight: bold;
+  font-style: normal;
+  padding-left: 10px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.accordion-toggle:hover .toggle-chevron:before {
+  text-decoration: none;
+}
+.accordion-toggle.active .toggle-chevron:before,
+.accordion-toggle.active:hover .toggle-chevron:before {
+  display: inline-block;
+  content: "\e113";
+  color: #ffffff;
+}
+.label {
+  margin-top: 1px;
+}
+.btn-mini {
+  background-color: rgba(45, 176, 218, 0.25);
+  border-color: rgba(45, 176, 218, 0.25);
+  color: #167aaa;
+  margin-top: -3px;
+}
+.btn-mini:hover {
+  background-color: #2db0da;
+  border-color: #2db0da;
+  color: #ffffff;
+}
+.btn-mini:empty {
+  display: none;
+}
 body {
   background: #333;
   padding-top: 90px;
@@ -6,22 +123,6 @@ body {
   body {
     padding-top: 0;
   }
-}
-.panel {
-  min-height: 20px;
-  padding: 19px;
-  margin-bottom: 20px;
-  background-color: #f9f9f9;
-  border: 1px solid #e7e7e7;
-  border-radius: 4px;
-}
-.panel-large {
-  padding: 24px;
-  border-radius: 6px;
-}
-.panel-small {
-  padding: 9px;
-  border-radius: 3px;
 }
 .label {
   display: inline-block;
@@ -80,115 +181,6 @@ a.label:hover {
 }
 .btn-mini .label {
   top: 0;
-}
-.cheatsheet .accordion {
-  margin-bottom: 10px;
-  font-size: 12px;
-}
-.cheatsheet .accordion-group {
-  margin: 0;
-  border: 1px solid #e1e1e1;
-  border-radius: 0;
-}
-.cheatsheet .accordion-group + .accordion-group {
-  border-top: none;
-}
-.cheatsheet .accordion-heading {
-  margin: 0;
-  border-bottom: none;
-}
-.cheatsheet .accordion-heading .accordion-toggle {
-  color: black;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  padding: 4px 15px;
-  background: #eeeeee;
-}
-.cheatsheet .accordion-heading .accordion-toggle:hover,
-.cheatsheet .accordion-toggle.active,
-.cheatsheet .accordion-toggle.active:hover {
-  font-weight: bold;
-  color: #ffffff;
-  text-decoration: none;
-  background: #2db0da;
-}
-.cheatsheet .accordion-title {
-  font-family: "Source Sans Pro";
-  font-weight: 600;
-  margin-top: 0;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 4px;
-  margin-bottom: 4px;
-}
-.cheatsheet .accordion-section {
-  display: block;
-  font-size: 14px;
-  font-family: "Source Sans Pro";
-  color: #444;
-  padding: 3px 0 5px;
-  margin-top: 6px;
-  border-top: 1px solid #ddd;
-}
-.cheatsheet .accordion-section:empty {
-  display: none;
-}
-.cheatsheet .accordion-title + .accordion-section {
-  border-top: none;
-}
-.cheatsheet .accordion-inner {
-  font-weight: normal;
-  background: #d9edf7;
-  border-top: 1px solid #e1e1e1;
-}
-.cheatsheet .accordion-inner .summary {
-  display: block;
-  color: #075d8d;
-  margin: -10px -15px 10px;
-  padding: 6px 15px;
-  background: #bee1e4;
-}
-.cheatsheet .collapse {
-  -webkit-transition: height 0.08s ease;
-  -moz-transition: height 0.08s ease;
-  -ms-transition: height 0.08s ease;
-  -o-transition: height 0.08s ease;
-  transition: height 0.08s ease;
-}
-.cheatsheet .accordion-toggle .toggle-chevron:before {
-  float: right;
-  display: inline-block;
-  content: "\e114";
-  font-size: 10px;
-  font-family: 'Glyphicons Halflings';
-  font-weight: bold;
-  font-style: normal;
-  padding-left: 10px;
-  color: rgba(0, 0, 0, 0.3);
-}
-.cheatsheet .accordion-toggle:hover .toggle-chevron:before {
-  text-decoration: none;
-}
-.cheatsheet .accordion-toggle.active .toggle-chevron:before,
-.cheatsheet .accordion-toggle.active:hover .toggle-chevron:before {
-  display: inline-block;
-  content: "\e113";
-  color: #ffffff;
-}
-.cheatsheet .label {
-  margin-top: 1px;
-}
-.cheatsheet .btn-mini {
-  background-color: rgba(45, 176, 218, 0.25);
-  border-color: rgba(45, 176, 218, 0.25);
-  color: #167aaa;
-  margin-top: -3px;
-}
-.cheatsheet .btn-mini:hover {
-  background-color: #2db0da;
-  border-color: #2db0da;
-  color: #ffffff;
-}
-.cheatsheet .btn-mini:empty {
-  display: none;
 }
 .code-example,
 .code-result {
