@@ -2,8 +2,8 @@
 
 > Cheatsheet boilerplate. Created for the new [lesscss.org](http://lesscss.org) website (planned for later this year!), based on "[Shopify Cheat Sheet](http://cheat.markdunkley.com/)" by [Mark Dunkley](https://twitter.com/markdunkley).
 
-
 Live [demo here](http://assemble.github.com/toolkit-cheatsheet/).
+
 
 ## Getting Started
 If you want to modify this component, you may directly edit the source files: `.hbs` (Handlebars) templates, `.json` data, and `.less`. Or if you prefer you can grab the compiled HTML and CSS from `gh-pages` branch.
@@ -18,8 +18,10 @@ To begin working with source files:
 
 
 **Templates** for the cheatsheet are found here: `src/templates/**/*.hbs`.
-**Styles** for the cheatsheet are found here: `src/styles/cheatsheet.less`
-**Data** for the cheatsheet is found here: `src/data/cheatsheet.json`
+
+**Styles** for the cheatsheet are found here: `src/styles/cheatsheet.less`.
+
+**Data** for the cheatsheet is found here: `src/data/cheatsheet.json`.
 
 
 ## TODO:
@@ -31,10 +33,12 @@ Since this is a new component we still have some housekeeping to do:
   * Documentation to show how to create the cheatsheet from scratch
 
 
-## Tools
+## About this Component
+
+Cheatsheet is a [Toolkit](http://github.com/assemble/toolkit) component.
 
 #### Grunt.js + Assemble
-Toolkit uses [Assemble](http://github.com/assemble/assemble), a Grunt.js plugin that makes it dead simple to build component with templates, external data
+Toolkit uses [Assemble](http://github.com/assemble/assemble), a Grunt.js plugin that makes it dead simple to build components with HTML, client-side templates, externalized data (JSON/YAML), and LESS.
 
 #### Bootstrap Drop-in
 As with most Toolkit components, _cheatsheet_ is designed as a drop-in for [Bootstrap](http://twitter.github.com/bootstrap), but it can also be used on it's own.
@@ -42,7 +46,7 @@ As with most Toolkit components, _cheatsheet_ is designed as a drop-in for [Boot
 
 
 ## Author
-+ [jonschlinkert](http://github.com/jonschlinkert)
++ Jon Schlinkert (@[jonschlinkert](http://github.com/jonschlinkert))
 
 
 ## License
