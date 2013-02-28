@@ -1,3 +1,12 @@
+body {
+  background: #333;
+  padding-top: 90px;
+}
+@media (max-width: 979px) {
+  body {
+    padding-top: 0;
+  }
+}
 .accordion-panel {
   min-height: 20px;
   padding: 9px;
@@ -115,15 +124,6 @@
 .btn-mini:empty {
   display: none;
 }
-body {
-  background: #333;
-  padding-top: 90px;
-}
-@media (max-width: 979px) {
-  body {
-    padding-top: 0;
-  }
-}
 .label {
   display: inline-block;
   padding: 3px 6px 2px;
@@ -182,17 +182,17 @@ a.label:hover {
 .btn-mini .label {
   top: 0;
 }
-.code-example,
-.code-result {
+.less-example,
+.compiled-result {
+  display: block;
   color: #ffffff;
   padding: 6px 12px;
   margin-top: 10px;
-  display: block;
+  background: #555555;
   border: none;
   border-radius: 0;
-  background: #555555;
 }
-.code-result {
+.compiled-result {
   margin: 0;
   background: #333333;
 }

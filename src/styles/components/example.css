@@ -1,0 +1,82 @@
+#example {
+  float: right;
+  width: 500px;
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+}
+
+#example pre {
+  width: 450px;
+  padding: 15px;
+  margin: 0;
+  margin-top: 20px;
+  font-family: 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', 'Monaco', Courier, monospace !important;
+  line-height: 15px;
+  color: #ebefe7;
+  text-shadow: 0 -1px 1px #262626;
+  background-color: #262626;
+  background-repeat: repeat;
+  border: 0;
+  border: 1px dashed #e6ebe0;
+  -webkit-border-radius: 2px;
+     -moz-border-radius: 2px;
+          border-radius: 2px;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+     -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+#example pre code .attribute,
+#example pre code .keyword {
+  color: #d9bf8c;
+}
+
+#example pre code .variable {
+  color: #738c73;
+}
+
+#example pre code .element {
+  color: #669991;
+}
+
+#example pre code .string,
+#example pre .regexp {
+  color: #bcd279;
+}
+
+#example pre code .class {
+  font-weight: normal;
+  color: #c2a770;
+}
+
+#example pre code .id {
+  font-weight: normal;
+  color: #c2b470;
+}
+
+#example pre code .comment {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+#example pre code .number,
+#example pre .color {
+  color: #b35e4d;
+}
+
+#example pre code .class,
+#example pre code .mixin,
+#example pre .special {
+  color: #669199;
+}
+
+#example pre #time {
+  color: #aaaaaa;
+}
+
+#example p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #143352;
+  text-shadow: 0px 1px 1px #e6ebe0;
+}

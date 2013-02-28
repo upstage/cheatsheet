@@ -3,10 +3,10 @@
       {{#each grid-columns}}
         <div class="{{column}}">
         {{#each accordion}}
-          <div class="panel panel-small">
-            <div class="accordion cheatsheet-accordion" id="{{accordion-id}}">
+          <div class="accordion-panel">
+            <div class="accordion" id="{{accordion-id}}">
               {{#if wiki-href}}<a href="{{wiki-href}}" class="btn btn-primary btn-mini pull-right">Wiki</a>{{/if}}
-              {{#if accordion-title}}<h4 class="accordion-title">{{accordion-title}}</h4>{{/if}}
+              <h4 class="accordion-title">{{accordion-title}}</h4>
               {{#each accordion-groups}}
               {{#if accordion-section}}
               <strong class="accordion-section">{{accordion-section}}</strong>
@@ -26,11 +26,26 @@
                     </div>
                     {{{ group-inner }}}
                     <div class="accordion-example">
-                      <code class="code-example">
-                        This example code.
-                      </code>
-                      <code class="code-result">
-                        \{{ page.title }}
+                      <div class="less-example">
+<pre class="prettyprint linenums">
+.less-example,
+.compiled-result {
+  display: block;
+  color: @white;
+  padding: 6px 12px;
+  margin-top: 10px;
+  background: @gray;
+  border: none;
+  border-radius: 0;
+}
+.compiled-result {
+  margin: 0;
+  background: @grayDark;
+}
+</pre>
+                      </div>
+                      <code class="compiled-result">
+                        \{{ page.title }} background-color: @state-error-text;
                       </code>
                     </div>
                   </div>

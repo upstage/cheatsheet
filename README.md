@@ -1,5 +1,4 @@
-toolkit-cheatsheet
-==================
+# toolkit-cheatsheet
 
 > Cheatsheet boilerplate. Created for the new [lesscss.org](http://lesscss.org) website (planned for later this year!), based on "[Shopify Cheat Sheet](http://cheat.markdunkley.com/)" by [Mark Dunkley](https://twitter.com/markdunkley).
 
@@ -13,6 +12,7 @@ A few things you need to know first.
   3.
 
   * `cheatsheet.less`
+
 
 Cheatsheet uses [Assemble](http://github.com/assemble/assemble), a Grunt.js plugin that makes it dead simple to build component with templates, external data
 

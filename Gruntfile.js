@@ -15,6 +15,11 @@ module.exports = function(grunt) {
   grunt.initConfig({
     config: grunt.file.readJSON('config.json'),
 
+    // Template paths, for convenience
+    layouts:  'src/templates/layouts/'
+    pages:    'src/templates/pages/'
+    partials: 'src/templates/partials/'
+
     // Assemble static files from templates and data.
     assemble: {
       options: {
@@ -29,12 +34,14 @@ module.exports = function(grunt) {
       },
       pages: {
         options: {
-          layout:   'src/templates/layouts/layout-default.hbs',
-          partials: 'src/templates/partials/**/*.hbs'
+          layout:   '<%= layouts %>/layout-default.hbs',
+          partials: '<%= partials %>/**/*.hbs'
         },
 
-        // Build project pages. ('dest': ['source'])
-        files: { '.' : ['src/templates/pages/*.hbs'] }
+        // Build project pages.
+        files: {
+          '.' : ['<%= pages %>/*.hbs']
+        }
       }
     },
 
@@ -53,7 +60,7 @@ module.exports = function(grunt) {
     watch: {
       src: {
         files: [ 'src/**/*.*' ],
-        tasks: [ 'assemble' ]
+        tasks: [ 'assemble', 'less' ]
       }
     }
 
@@ -62,12 +69,14 @@ module.exports = function(grunt) {
   // Load npm plugins to provide necessary tasks.
   grunt.loadNpmTasks('assemble');
   grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
 
   // Default task to be run.
   grunt.registerTask('default', [
     'assemble',
-    'less'
+    'less',
+    'watch'
   ]);
 
 };

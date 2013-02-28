@@ -2,22 +2,23 @@
 page:
   title: Cheatsheet Boilerplate
   subtitle: A Toolkit Component
-  brand: <%= page.title %>
+  brand: Cheatsheet
   stylesheet: cheatsheet.css
   left-links:
     -
-      href: https://github.com/assemble/assemble
-      text: Assemble
-    -
-      href: https://github.com/assemble/toolkit
-      text: Toolkit
+      text: Docs
+      href: http://assemble.github.com/toolkit-cheatsheet/docs.html
+
   right-links:
     -
-      href: https://github.com/assemble/assemble
-      text: Assemble
+      text: Docs
+      href: http://assemble.github.com/toolkit-cheatsheet/docs.html
     -
-      href: https://github.com/assemble/toolkit
-      text: Toolkit
+      text: Github Repo
+      href: http://assemble.github.com/toolkit-cheatsheet/docs.html
+    -
+      text: Assemble
+      href: https://github.com/assemble/assemble
 ---
 
 
@@ -52,7 +53,7 @@ page:
 {{/grid.container}}
 
 
-<div class="cheatsheet container-fluid">
+<div class="container-fluid">
 
   {{#cheatsheet}}
     {{> cheatsheet-accordion }}
