@@ -34,7 +34,7 @@ module.exports = function(grunt) {
       },
       pages: {
         options: {
-          layout:   '<%= layouts %>/layout-default.hbs',
+          layout:   '<%= layouts %>/default.hbs',
           partials: '<%= partials %>/**/*.hbs'
         },
 
