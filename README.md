@@ -3,6 +3,14 @@
 > Cheatsheet boilerplate. Created for the new [lesscss.org](http://lesscss.org) website (planned for later this year!), based on "[Shopify Cheat Sheet](http://cheat.markdunkley.com/)" by [Mark Dunkley](https://twitter.com/markdunkley).
 
 
+TODO:
+  * README is unfinished! So first things first, update readme instructions.
+  * Clean out unnecessary development styles and remove extra `.less` components
+  * Refactor grid and data model to simplify
+  * Add a `.yml` version of the cheatsheet data.
+  * Expand docs to show how to create the cheatsheet from scratch
+
+
 ## Getting Started
 
 A few things you need to know first.
