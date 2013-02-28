@@ -24,13 +24,11 @@ To begin working with source files:
 **Data** for the cheatsheet is found here: `src/data/cheatsheet.json`.
 
 
-## TODO:
-Since this is a new component we still have some housekeeping to do:
+## Contributions
 
-  * Clean out unnecessary development styles and remove unused `.less` components
-  * Refactor and simplify grid and data model
-  * Add a `.yml` version of the cheatsheet data.
-  * Documentation to show how to create the cheatsheet from scratch
+Contributions welcome, and to make feature requests or report bugs, visit the [Issues](https://github.com/assemble/toolkit-cheatsheet/issues).
+
+To request a _new component_, please visit the [Toolkit Issues](http://github.com/assemble/toolkit/issues) page on GitHub.
 
 
 ## About this Component

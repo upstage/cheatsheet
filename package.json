@@ -1,7 +1,7 @@
 {
   "name": "toolkit-cheatsheet",
   "description": "Cheatsheet boilerplate. Created for the new lesscss.org website, based on Shopify Cheat Sheet by Mark Dunkley.",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": "Jon Schlinkert",
   "contributors": [
     {
@@ -20,7 +20,7 @@
     "node": ">= 0.8.0"
   },
   "devDependencies": {
-    "assemble": "0.3.6",
+    "assemble": "0.3.7",
     "grunt": "0.4.0",
     "grunt-contrib-copy": "0.4.0",
     "grunt-contrib-less": "0.5.0",

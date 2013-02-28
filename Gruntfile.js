@@ -16,19 +16,13 @@ module.exports = function(grunt) {
     config: grunt.file.readJSON('config.json'),
 
     // Template paths, for convenience
-    layouts:  'src/templates/layouts/'
-    pages:    'src/templates/pages/'
-    partials: 'src/templates/partials/'
+    layouts:  'src/templates/layouts/',
+    pages:    'src/templates/pages/',
+    partials: 'src/templates/partials/',
 
-    // Assemble static files from templates and data.
+    // Build static files from templates and data.
     assemble: {
       options: {
-        engine: 'handlebars',
-        helpers: '<%= config.helpers %>',
-        preprocessors: '<%= config.preprocessors %>',
-        docs: true,
-        production: false,
-        flatten: true,
         assets: 'assets',
         data: ['src/data/cheatsheet.json']
       },
@@ -37,10 +31,8 @@ module.exports = function(grunt) {
           layout:   '<%= layouts %>/default.hbs',
           partials: '<%= partials %>/**/*.hbs'
         },
-
-        // Build project pages.
         files: {
-          '.' : ['<%= pages %>/*.hbs']
+          '.' : [ '<%= pages %>/cheatsheet.hbs' ]
         }
       }
     },
@@ -49,9 +41,9 @@ module.exports = function(grunt) {
     less: {
       compile: {
         options: {
-          paths: ['src/styles', 'src/styles/bootstrap'] },
+          paths: [ 'src/styles', 'src/styles/bootstrap']
+        },
         files: {
-      //    'assets/css/bootstrap.css':  ['src/less/bootstrap/bootstrap.less'],
           'assets/css/cheatsheet.css': ['src/styles/cheatsheet.less'],
         }
       }
