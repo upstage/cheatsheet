@@ -1,7 +1,7 @@
 {
   "name": "toolkit-cheatsheet",
   "description": "Cheatsheet boilerplate. Created for the new lesscss.org website, based on Shopify Cheat Sheet by Mark Dunkley.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Jon Schlinkert",
   "contributors": [
     {
@@ -19,22 +19,50 @@
   "engines": {
     "node": ">= 0.8.0"
   },
-  "keywords": [
-    "cheatsheet",
-    "docs",
-    "documentation",
-    "toolkit",
-    "component",
-    "templates",
-    "less.js",
-    "less",
-    "assemble"
-  ],
   "devDependencies": {
     "assemble": "0.3.7",
     "grunt": "0.4.0",
     "grunt-contrib-copy": "0.4.0",
     "grunt-contrib-less": "0.5.0",
-    "grunt-contrib-handlebars": "0.5.4"
-  }
+    "grunt-contrib-handlebars": "0.5.4",
+    "highlight.js": "~7.3.0"
+  },
+  "keywords": [
+    "assemble",
+    "boilerplate",
+    "boilerplates",
+    "bootstrap",
+    "build and deployment",
+    "build system",
+    "build",
+    "build-bootstrap",
+    "builder",
+    "cheatsheet",
+    "compile",
+    "compiler",
+    "component",
+    "components",
+    "conventions",
+    "docs",
+    "documentation",
+    "framework",
+    "generator",
+    "gh-pages",
+    "grunt task",
+    "grunt",
+    "less",
+    "less.js",
+    "pre-processor",
+    "pre-processors",
+    "scaffold",
+    "scaffolds",
+    "static HTML",
+    "template",
+    "templates",
+    "templating",
+    "theme",
+    "themes",
+    "theming",
+    "toolkit"
+  ]
 }

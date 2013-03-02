@@ -13,31 +13,25 @@ module.exports = function(grunt) {
 
   // Project configuration.
   grunt.initConfig({
-    config: grunt.file.readJSON('config.json'),
-
-    // Template paths, for convenience
-    layouts:  'src/templates/layouts/',
-    pages:    'src/templates/pages/',
-    partials: 'src/templates/partials/',
+    config:     grunt.file.readJSON('config.json'),
 
     // Build static files from templates and data.
     assemble: {
       options: {
-        assets: 'assets',
-        data: ['src/data/cheatsheet.json']
+        helpers: '<%= config.helpers.handlebars %>',
+        assets: 'assets'
       },
       pages: {
         options: {
-          layout:   '<%= layouts %>/default.hbs',
-          partials: '<%= partials %>/**/*.hbs'
+          layout  : 'src/templates/layouts/default.hbs',
+          partials: 'src/templates/partials/**/*.hbs',
+          data    : ['src/data/cheatsheet.json', 'config.json']
         },
         files: {
-          '.' : [ '<%= pages %>/cheatsheet.hbs' ]
+          '.' : [ 'src/templates/pages/cheatsheet.hbs' ]
         }
       }
     },
-
-    // Compile LESS to CSS
     less: {
       compile: {
         options: {
@@ -45,17 +39,16 @@ module.exports = function(grunt) {
         },
         files: {
           'assets/css/cheatsheet.css': ['src/styles/cheatsheet.less'],
+          'assets/css/pretty.css': ['src/styles/components/pretty.less']
         }
       }
     },
-
     watch: {
       src: {
         files: [ 'src/**/*.*' ],
         tasks: [ 'assemble', 'less' ]
       }
     }
-
   });
 
   // Load npm plugins to provide necessary tasks.
@@ -63,12 +56,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
-
   // Default task to be run.
   grunt.registerTask('default', [
     'assemble',
-    'less',
-    'watch'
+    'less'
   ]);
-
 };
