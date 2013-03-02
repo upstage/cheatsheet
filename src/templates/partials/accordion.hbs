@@ -1,0 +1,36 @@
+{{#each rows}}
+  <div class="{{row-modifier}}">
+  {{#each columns}}
+    <div class="{{column}}">
+    {{#each accordion}}
+      <div class="accordion-panel">
+        <div class="accordion" id="{{accordion-id}}">
+          {{#if wiki-href}}<a href="{{wiki-href}}" class="btn btn-primary btn-mini pull-right">Wiki &raquo;</a>{{/if}}
+          <h4 class="accordion-title">{{{accordion-title}}}</h4>
+          {{#each accordion-groups}}{{#if accordion-section}} <strong class="accordion-section">{{{accordion-section}}}</strong>
+          {{else}}
+          <dl class="accordion-group">
+            <dd class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#{{../../accordion-id}}" href="#{{../../accordion-id}}-{{../topic-href}}">
+                <i class="toggle-chevron"></i>
+                <span class="label label-{{topic-label-modifier}} pull-right">{{ topic-label }}</span>
+                {{{ topic-name }}}
+              </a>
+            </dd>
+            <dt id="{{../../accordion-id}}-{{../topic-href}}" class="accordion-body collapse">
+              <div class="accordion-inner">
+                <div class="summary">
+                  {{{ topic-summary }}}
+                </div>
+                {{{ topic-description }}}
+
+                {{> example }}
+
+              </div>
+            </dt>
+          </dl>{{/if}}{{/each}}
+        </div>
+      </div>{{/each}}
+    </div>{{/each}}
+  </div>
+{{/each}}
