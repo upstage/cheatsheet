@@ -1,5 +1,10 @@
 {
-  "helpers": "../../lib/engines/handlebars/helpers/defaultHelpers",
+  "comments": "config.json is a temporary quickfix while we refactor helpers and preprocessors",
   "preprocessors": "../../lib/engines/handlebars/preprocessors/handlebarsPreprocessors",
+  "helpers": {
+    "handlebars": "node_modules/assemble/lib/engines/handlebars/helpers/defaultHelpers.js"
+  },
+  "highlight": false,
+  "prettify": true,
   "content": "src/content"
 }
