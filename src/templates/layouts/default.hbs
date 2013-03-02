@@ -8,7 +8,7 @@
     <!-- stylesheets -->
     <link rel="stylesheet" href="{{assets}}/css/bootstrap.css">
     {{#if page.stylesheet}}<link rel="stylesheet" href="{{assets}}/css/{{ page.stylesheet }}">{{/if}}
-    <link rel="stylesheet" href="{{assets}}/js/prettify/prettify.css">
+    {{#if config.prettify}}<link rel="stylesheet" href="{{assets}}/js/prettify/prettify.css">{{/if}}
   </head>
   <body>
 
@@ -39,7 +39,7 @@
 
     <!-- javascript
     ================================================== -->
-    <script src="{{assets}}/js/prettify/prettify.js"></script>
+    {{#if config.prettify}}<script src="{{assets}}/js/prettify/prettify.js"></script>{{/if}}
     <script src="{{assets}}/js/jquery.js"></script>
     <script src="{{assets}}/js/bootstrap-collapse.js"></script>
 
