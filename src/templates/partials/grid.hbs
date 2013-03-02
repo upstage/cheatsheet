@@ -1,0 +1,19 @@
+{{#grid.container}}
+<div class="container">
+  {{#rows}}<div class="row">
+    {{#columns}}<div class="span{{width}}">
+
+      {{#content}}
+        {{#if html}}{{{html}}}{{/if}}
+        {{#if md}}{{{md md}}}{{/if}}
+        {{#if markdown}}
+          {{#markdown}}
+            {{this.markdown}}
+          {{/markdown}}
+        {{/if}}
+      {{/content}}
+
+    </div>{{/columns}}
+  </div>{{/rows}}
+</div>
+{{/grid.container}}

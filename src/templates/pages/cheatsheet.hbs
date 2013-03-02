@@ -21,42 +21,10 @@ page:
       href: https://github.com/assemble/assemble
 ---
 
-
-{{#grid.container}}
-<div class="container">
-
-  {{#rows}}
-  <div class="row">
-
-    {{#spans}}
-    <div class="span{{columns}}">
-      test
-      {{#content}}
-
-        {{#if html}}{{{html}}}{{/if}}
-        {{#if md}}{{{md md}}}{{/if}}
-        {{#if markdown}}
-          {{#markdown}}
-            {{this.markdown}}
-          {{/markdown}}
-        {{/if}}
-
-      {{/content}}
-
-    </div>
-    {{/spans}}
-
-  </div>
-  {{/rows}}
-
-</div>
-{{/grid.container}}
-
-
 <div class="container-fluid">
 
   {{#cheatsheet}}
-    {{> cheatsheet-accordion }}
+    {{> accordion }}
   {{/cheatsheet}}
 
 </div><!-- /container -->
