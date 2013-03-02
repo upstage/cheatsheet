@@ -1,51 +1,34 @@
-    {{#each grid-rows}}
+    {{#each rows}}
       <div class="{{row-modifier}}">
-      {{#each grid-columns}}
+      {{#each columns}}
         <div class="{{column}}">
         {{#each accordion}}
           <div class="accordion-panel">
             <div class="accordion" id="{{accordion-id}}">
-              {{#if wiki-href}}<a href="{{wiki-href}}" class="btn btn-primary btn-mini pull-right">Wiki</a>{{/if}}
-              <h4 class="accordion-title">{{accordion-title}}</h4>
-              {{#each accordion-groups}}
-              {{#if accordion-section}}
-              <strong class="accordion-section">{{accordion-section}}</strong>
+              {{#if wiki-href}}<a href="{{wiki-href}}" class="btn btn-primary btn-mini pull-right">Wiki &raquo;</a>{{/if}}
+              <h4 class="accordion-title">{{{accordion-title}}}</h4>
+              {{#each accordion-groups}}{{#if accordion-section}} <strong class="accordion-section">{{{accordion-section}}}</strong>
               {{else}}
               <dl class="accordion-group">
                 <dd class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#{{../../accordion-id}}" href="#{{../../accordion-id}}-{{../group-href}}">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#{{../../accordion-id}}" href="#{{../../accordion-id}}-{{../topic-href}}">
                     <i class="toggle-chevron"></i>
-                    <span class="label label-success pull-right">{{label}}</span>
-                    {{ group-title }}
+                    <span class="label label-{{topic-label-modifier}} pull-right">{{ topic-label }}</span>
+                    {{{ topic-name }}}
                   </a>
                 </dd>
-                <dt id="{{../../accordion-id}}-{{../group-href}}" class="accordion-body collapse">
+                <dt id="{{../../accordion-id}}-{{../topic-href}}" class="accordion-body collapse">
                   <div class="accordion-inner">
                     <div class="summary">
-                      If this, then do that.
+                      {{{ topic-summary }}}
                     </div>
-                    {{{ group-inner }}}
+                    {{{ topic-description }}}
                     <div class="accordion-example">
-                      <div class="less-example">
-<pre class="prettyprint linenums">
-.less-example,
-.compiled-result {
-  display: block;
-  color: @white;
-  padding: 6px 12px;
-  margin-top: 10px;
-  background: @gray;
-  border: none;
-  border-radius: 0;
-}
-.compiled-result {
-  margin: 0;
-  background: @grayDark;
-}
-</pre>
+                      <div class="code-example">
+{{{md code-example}}}
                       </div>
                       <code class="compiled-result">
-                        \{{ page.title }} background-color: @state-error-text;
+                        {{{md compiled-result}}}
                       </code>
                     </div>
                   </div>
