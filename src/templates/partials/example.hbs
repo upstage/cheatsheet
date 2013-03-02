@@ -1,0 +1,10 @@
+{{#each examples}}
+<div class="example">
+  {{#if code-example}}<div class="code-example">
+    {{{md code-example}}}
+  </div>{{/if}}
+  {{#if compiled-result}}<code class="compiled-result">
+    {{{md compiled-result}}}
+  </code>{{/if}}
+</div>
+{{/each}}
