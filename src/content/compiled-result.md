@@ -1,0 +1,1 @@
+\{{ page.title }} background-color: @state-error-text;
