@@ -3,11 +3,10 @@
 // -----------------------------------------------------------
 
 
-
-
 // Base classes
 .label {
   display: inline-block;
+  margin-top: 1px;
   padding: 3px 6px 2px;
   font-size: @font-size-small;
   line-height: 14px; // ensure proper line-height if floated
@@ -17,36 +16,27 @@
   background-color: @grayLight;
   .border-radius(3px);
 }
+.label:hover,
+:hover .label {
+  font-weight: normal;
+}
 
 // Empty labels/badges collapse
 .label:empty {
   display: none;
 }
 
-// Hover state, but only for links
-a.label:hover {
-  color: @white;
-  text-decoration: none;
-  cursor: pointer;
-}
-
 // Colors
-// Only give background-color difference to links (and to simplify, we don't qualifty with `a` but [href] attribute)
 .label {
   // Important (red)
   &-important         { background-color: @state-error-text; }
-  &-important[href]   { background-color: darken(@state-error-text, 10%); }
   // Warnings (orange)
   &-warning           { background-color: @orange; }
-  &-warning[href]     { background-color: darken(@orange, 10%); }
   // Success (green)
   &-success           { background-color: #378d0e; }
-  &-success[href]     { background-color: darken(@green, 10%); }
   // Info (turquoise)
   &-info              { background-color: @state-info-text; }
-  &-info[href]        { background-color: darken(@state-info-text, 10%); }
   // Inverse (black)
   &-inverse           { background-color: @grayDark; }
-  &-inverse[href]     { background-color: darken(@grayDark, 10%); }
 }
 
