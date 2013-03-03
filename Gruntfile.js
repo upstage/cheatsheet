@@ -39,7 +39,7 @@ module.exports = function(grunt) {
         },
         files: {
           'assets/css/cheatsheet.css': ['src/styles/cheatsheet.less'],
-          'assets/css/pretty.css': ['src/styles/components/pretty.less']
+          'assets/js/prettify/prettify.css': ['src/styles/components/prettify.less']
         }
       }
     },
