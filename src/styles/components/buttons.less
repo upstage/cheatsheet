@@ -7,3 +7,20 @@
 .btn-mini .label {
   top: 0;
 }
+
+
+.btn-mini {
+  background-color: rgba(45,176,218,.25);
+  border-color: rgba(45,176,218,.25);
+  color: #167aaa;
+  margin-top: -3px;
+  &:hover {
+    background-color: #2db0da;
+    border-color: #2db0da;
+    color: @white;
+  }
+}
+// Empty buttons collapse
+.btn-mini:empty {
+  display: none;
+}
