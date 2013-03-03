@@ -11,6 +11,8 @@ pids
 logs
 results
 
+src/content/less-tests/
+
 npm-debug.log
 /node_modules/
 *.sublime-project

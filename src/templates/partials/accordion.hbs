@@ -1,36 +1,43 @@
 {{#each rows}}
   <div class="{{row-modifier}}">
-  {{#each columns}}
-    <div class="{{column}}">
-    {{#each accordion}}
-      <div class="accordion-panel">
-        <div class="accordion" id="{{accordion-id}}">
-          {{#if wiki-href}}<a href="{{wiki-href}}" class="btn btn-primary btn-mini pull-right">Wiki &raquo;</a>{{/if}}
-          <h4 class="accordion-title">{{{accordion-title}}}</h4>
-          {{#each accordion-groups}}{{#if accordion-section}} <strong class="accordion-section">{{{accordion-section}}}</strong>
-          {{else}}
-          <dl class="accordion-group">
-            <dd class="accordion-heading">
-              <a class="accordion-toggle" data-toggle="collapse" data-parent="#{{../../accordion-id}}" href="#{{../../accordion-id}}-{{../topic-href}}">
-                <i class="toggle-chevron"></i>
-                <span class="label label-{{topic-label-modifier}} pull-right">{{ topic-label }}</span>
-                {{{ topic-name }}}
-              </a>
-            </dd>
-            <dt id="{{../../accordion-id}}-{{../topic-href}}" class="accordion-body collapse">
-              <div class="accordion-inner">
-                <div class="summary">
-                  {{{ topic-summary }}}
-                </div>
-                {{{ topic-description }}}
+    {{#each columns}}
+      <div class="span{{width}}">
+        {{#each accordions}}
 
-                {{> example }}
+          <!-- Accordion panel.
+          ======================================== -->
+          <div class="accordion-panel">
+            <div class="accordion" id="{{accordion-id}}">
+              {{#if wiki-href}}<a href="{{wiki-href}}" class="btn btn-primary btn-mini pull-right">Wiki &raquo;</a>{{/if}}
+              <h4 class="accordion-title">{{{accordion-title}}}</h4>
+              {{#each accordion-groups}}
+                {{#if accordion-section}} <strong class="accordion-section">{{{accordion-section}}}</strong> {{else}}
 
-              </div>
-            </dt>
-          </dl>{{/if}}{{/each}}
-        </div>
-      </div>{{/each}}
-    </div>{{/each}}
-  </div>
+                  <!-- Accordion group -->
+                  <dl class="accordion-group">
+                    <dt class="accordion-heading">
+                      <a class="accordion-toggle" data-toggle="collapse" data-parent="#{{../../accordion-id}}" href="#{{../../accordion-id}}-{{../topic-href}}">
+                        <i class="toggle-chevron"></i>{{#if label}} <span class="label label-{{label-modifier}} pull-right">{{ label }}</span>{{/if}}
+                        {{{ topic-name }}}
+                      </a>
+                    </dt>
+
+                    <!-- Accordion group --> {{! concatenate the accordion Id onto the topic href to create a unique Id for definition }}
+                    <dd id="{{../../accordion-id}}-{{../topic-href}}" class="accordion-body collapse">
+                      <div class="accordion-inner">
+                        <div class="topic-summary">
+                          {{{ topic-summary }}}
+                        </div>
+                        {{> example }}
+                      </div>
+                    </dd>
+                  </dl><!-- /accordion-group -->
+                {{/if}}
+              {{/each}}
+            </div>
+          </div><!-- /accordion-panel -->
+        {{/each}}
+      </div> {{! /columns }}
+    {{/each}}
+  </div> {{! /rows }}
 {{/each}}

@@ -4,398 +4,548 @@
       "row-modifier": "row-fluid",
       "columns": [
         {
-          "column": "span3",
-          "accordion": [
+          "width": 3,
+          "accordions": [
             {
-              "accordion-id": "accordion1",
+              "accordion-id": "<%= _.uniqueId('accordion') %>",
               "wiki-href": "#",
-              "accordion-title": "Accordion",
+              "accordion-title": "Variables",
               "accordion-groups": [
+                {
+                  "topic-name": "Basic",
+                  "topic-summary": "This is a summary",
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
+                },
+                {
+                  "topic-name": "Variable Names",
+                  "topic-summary": "This is a summary",
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "accordion-id": "<%= _.uniqueId('accordion') %>",
+              "wiki-href": "#",
+              "accordion-title": "Mixins",
+              "accordion-groups": [
+                {
+                  "topic-name": "Basic",
+                  "topic-summary": "This is a summary",
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
+                },
+                {
+                  "topic-name": "Parametric",
+                  "topic-summary": "This is a summary",
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": ".parametric(@one, @two);",
+                  "label-modifier": "code",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
+                },
+                {
+                  "topic-name": "Nested",
+                  "topic-summary": "This is a summary",
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
+                },
+                {
+                  "topic-name": "Namespaced",
+                  "topic-summary": "This is a summary",
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
+                },
+                {
+                  "topic-name": "Args",
+                  "topic-summary": "This is a summary",
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
+                },
+                {
+                  "topic-name": "Named Args",
+                  "topic-summary": "This is a summary",
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
+                },
+                {
+                  "topic-name": "Closure",
+                  "topic-summary": "This is a summary",
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
+                },
+                {
+                  "topic-name": "Guards",
+                  "topic-summary": "This is a summary",
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
+                },
                 {
                   "accordion-section": "Section Title"
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "1",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "2",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
-                },
-                {
-                  "accordion-section": "Section Title"
-                },
-                {
-                  "topic-name": "Group",
-                  "topic-href": "3",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
-                  "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "4",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
-                },
-                {
-                  "topic-name": "Group",
-                  "topic-href": "5",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
-                  "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
-                }
-              ]
-            },
-            {
-              "accordion-id": "accordion2",
-              "wiki-href": "#",
-              "accordion-title": "Accordion",
-              "accordion-groups": [
-                {
-                  "topic-name": "Group",
-                  "topic-href": "1",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
-                  "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
-                },
-                {
-                  "topic-name": "Group",
-                  "topic-href": "2",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
-                  "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
-                },
-                {
-                  "topic-name": "Group",
-                  "topic-href": "3",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
-                  "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "accordion-section": "Section Title"
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "4",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "5",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "6",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
-                },
-                {
-                  "accordion-section": "Section Title"
-                },
-                {
-                  "topic-name": "Group",
-                  "topic-href": "7",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
-                  "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
-                },
-                {
-                  "topic-name": "Group",
-                  "topic-href": "8",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
-                  "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
-                },
-                {
-                  "topic-name": "Group",
-                  "topic-href": "9",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
-                  "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 }
               ]
             },
             {
-              "accordion-id": "accordion3",
+              "accordion-id": "<%= _.uniqueId('accordion') %>",
               "wiki-href": "#",
               "accordion-title": "Accordion",
               "accordion-groups": [
                 {
                   "topic-name": "Group",
-                  "topic-href": "1",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "2",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "3",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 }
               ]
             },
             {
-              "accordion-id": "accordion4",
+              "accordion-id": "<%= _.uniqueId('accordion') %>",
               "wiki-href": "#",
               "accordion-title": "Accordion",
               "accordion-groups": [
                 {
                   "topic-name": "Group",
-                  "topic-href": "1",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "2",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "3",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 }
               ]
             },
             {
-              "accordion-id": "accordion5",
+              "accordion-id": "<%= _.uniqueId('accordion') %>",
               "wiki-href": "#",
               "accordion-title": "Accordion",
               "accordion-groups": [
                 {
                   "topic-name": "Group",
-                  "topic-href": "1",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "2",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "3",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 }
               ]
             },
             {
-              "accordion-id": "accordion6",
+              "accordion-id": "<%= _.uniqueId('accordion') %>",
               "wiki-href": "#",
               "accordion-title": "Accordion",
               "accordion-groups": [
                 {
                   "topic-name": "Group",
-                  "topic-href": "1",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "2",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "3",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "4",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "5",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "6",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 }
               ]
             }
           ]
         },
         {
-          "column": "span3",
-          "accordion": [
+          "width": 3,
+          "accordions": [
             {
-              "accordion-id": "accordion7",
+              "accordion-id": "<%= _.uniqueId('accordion') %>",
               "wiki-href": "#",
               "accordion-title": "Accordion",
               "accordion-groups": [
                 {
                   "topic-name": "Group",
-                  "topic-href": "1",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "2",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "3",
-                  "topic-label": "Deprecated",
-                  "topic-label-modifier": "warning",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "warning",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "4",
-                  "topic-label": "New",
-                  "topic-label-modifier": "success",
                   "topic-summary": "This is a summary",
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": "New",
+                  "label-modifier": "success",
                   "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!"
                 },
                 {
@@ -403,736 +553,980 @@
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "5",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "6",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "7",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "8",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "9",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 }
               ]
             },
             {
-              "accordion-id": "accordion8",
+              "accordion-id": "<%= _.uniqueId('accordion') %>",
               "wiki-href": "#",
               "accordion-title": "Accordion",
               "accordion-groups": [
                 {
                   "topic-name": "Group",
-                  "topic-href": "1",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "2",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "3",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "4",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "5",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "6",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "7",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "8",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 }
               ]
             },
             {
-              "accordion-id": "accordion9",
+              "accordion-id": "<%= _.uniqueId('accordion') %>",
               "wiki-href": "#",
               "accordion-title": "Accordion",
               "accordion-groups": [
                 {
                   "topic-name": "Group",
-                  "topic-href": "1",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "2",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "3",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "4",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "5",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "6",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "7",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "8",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "9",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 }
               ]
             }
           ]
         },
         {
-          "column": "span3",
-          "accordion": [
+          "width": 3,
+          "accordions": [
             {
-              "accordion-id": "accordion10",
+              "accordion-id": "<%= _.uniqueId('accordion') %>",
               "wiki-href": "#",
               "accordion-title": "Accordion",
               "accordion-subtitle": "Subtitle",
               "accordion-groups": [
                 {
                   "topic-name": "Group",
-                  "topic-href": "1",
-                  "topic-label": "New",
-                  "topic-label-modifier": "success",
                   "topic-summary": "This is a summary",
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": "New",
+                  "label-modifier": "success",
                   "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!"
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "2",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "3",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 }
               ]
             },
             {
-              "accordion-id": "accordion11",
+              "accordion-id": "<%= _.uniqueId('accordion') %>",
               "wiki-href": "#",
               "accordion-title": "Accordion",
               "accordion-groups": [
                 {
                   "topic-name": "Group",
-                  "topic-href": "1",
-                  "topic-label": "New",
-                  "topic-label-modifier": "success",
                   "topic-summary": "This is a summary",
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": "New",
+                  "label-modifier": "success",
                   "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!"
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "2",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "3",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "4",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "5",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "6",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 }
               ]
             },
             {
-              "accordion-id": "accordion11b",
+              "accordion-id": "<%= _.uniqueId('accordion') %>",
               "wiki-href": "#",
               "accordion-title": "Accordion",
               "accordion-groups": [
                 {
                   "topic-name": "Group",
-                  "topic-href": "1",
-                  "topic-label": "New",
-                  "topic-label-modifier": "success",
                   "topic-summary": "This is a summary",
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": "New",
+                  "label-modifier": "success",
                   "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!"
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "2",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 }
               ]
             },
             {
-              "accordion-id": "accordion12",
+              "accordion-id": "<%= _.uniqueId('accordion') %>",
               "wiki-href": "#",
               "accordion-title": "Accordion",
               "accordion-groups": [
                 {
                   "topic-name": "Group",
-                  "topic-href": "1",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "2",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "3",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "4",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "accordion-section": "Section Title"
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "5",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "6",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "accordion-section": "Section Title"
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "7",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "8",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "9",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 }
               ]
             }
           ]
         },
         {
-          "column": "span3",
-          "accordion": [
+          "width": 3,
+          "accordions": [
             {
-              "accordion-id": "accordion13",
+              "accordion-id": "<%= _.uniqueId('accordion') %>",
               "wiki-href": "#",
               "accordion-title": "Accordion",
               "accordion-subtitle": "Subtitle",
               "accordion-groups": [
                 {
                   "topic-name": "Group",
-                  "topic-href": "1",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "2",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 }
               ]
             },
             {
-              "accordion-id": "accordion13b",
+              "accordion-id": "<%= _.uniqueId('accordion') %>",
               "wiki-href": "#",
               "accordion-title": "Accordion",
               "accordion-subtitle": "Subtitle",
               "accordion-groups": [
                 {
                   "topic-name": "Group",
-                  "topic-href": "1",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "2",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 }
               ]
             },
             {
-              "accordion-id": "accordion14",
+              "accordion-id": "<%= _.uniqueId('accordion') %>",
               "wiki-href": "#",
               "accordion-title": "Accordion",
               "accordion-groups": [
                 {
                   "topic-name": "Group",
-                  "topic-href": "1",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "2",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "3",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "4",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "accordion-section": "Section Title"
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "5",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "6",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "accordion-section": "Section Title"
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "7",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "8",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "9",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "10",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "11",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "12",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "13",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 }
               ]
             },
             {
-              "accordion-id": "accordion15",
+              "accordion-id": "<%= _.uniqueId('accordion') %>",
               "wiki-href": "#",
               "accordion-title": "Accordion",
               "accordion-subtitle": "Subtitle",
               "accordion-groups": [
                 {
                   "topic-name": "Group",
-                  "topic-href": "1",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "2",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "3",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "accordion-section": "Section Title"
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "4",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 },
                 {
                   "topic-name": "Group",
-                  "topic-href": "5",
-                  "topic-label": "",
-                  "topic-label-modifier": "",
                   "topic-summary": "This is a summary",
-                  "topic-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
-                  "code-example": "src/content/code_example2.md",
-                  "compiled-result": "src/content/compiled_result.md"
+                  "topic-href": "<%= _.uniqueId('toggle') %>",
+                  "label": false,
+                  "label-modifier": "",
+                  "examples": [
+                    {
+                      "code-description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam laudantium ipsum hic impedit illo quas officia ab adipisci obcaecati dolore qui dolores perferendis id repellat ipsam nam modi provident!",
+                      "code-example": "src/content/example-json.md",
+                      "compiled-result": "src/content/compiled-result.md"
+                    }
+                  ]
                 }
               ]
             }
