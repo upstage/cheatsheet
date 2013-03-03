@@ -3,29 +3,38 @@
 // --------------------------------------------------
 
 
-@accordion-title-font:                "Source Sans Pro";
-@accordion-heading-font:              @font-family-sans-serif;
-@accordion-group-border:              darken(@accordion-toggle-background, 5%);
-@accordion-toggle-background:         #eee;
-@accordion-toggle-background-active:  @link-color;
+
+// Accordion Panels
+@accordion-panel-border-radius:       @border-radius-small;
 @accordion-panel-background:          #f9f9f9;
 
 
+// Accordion Headings
+@accordion-title-font:                "Source Sans Pro";
+@accordion-heading-font:              @font-family-sans-serif;
+
+
+// Accordion Groups
+@accordion-group-border:              darken(@accordion-toggle-background, 5%);
+@accordion-toggle-background:         #eee;
+@accordion-toggle-background-active:  @link-color;
 
 
 
-// Base class
+// Wrap accordions with panels.
 .accordion-panel {
   min-height: 20px;
   padding: 9px;
   margin-bottom: 20px;
   background-color: @accordion-panel-background;
   border: 1px solid darken(@accordion-panel-background, 7%);
-  border-radius: @border-radius-small;
+  border-radius: @accordion-panel-border-radius;
 }
 
 
-// Parent container
+// Base
+// ---------------
+
 .accordion {
   margin-bottom: (@line-height-base / 2);
   font-size: 12px;
@@ -39,24 +48,9 @@
     border-top: none;
   }
 }
-.accordion-heading {
-  margin: 0;
-  border-bottom: none;
-}
-.accordion-heading .accordion-toggle {
-  color: black;
-  font-family: @accordion-heading-font;
-  padding: 4px 15px;
-  background: @accordion-toggle-background;
-}
-.accordion-heading .accordion-toggle:hover,
-.accordion-toggle.active,
-.accordion-toggle.active:hover {
-  font-weight: bold;
-  color: @white;
-  text-decoration: none;
-  background: @accordion-toggle-background-active;
-}
+
+
+// Title sits above headings
 .accordion-title {
   font-family: @accordion-title-font;
   font-weight: 600;
@@ -65,6 +59,59 @@
   padding-bottom: 4px;
   margin-bottom: 4px;
 }
+
+
+// Headings
+// ---------------
+
+.accordion-heading {
+  margin: 0;
+  font-weight: normal; // reset dt font weight
+  border-bottom: none;
+
+  // Toggles
+  .accordion-toggle {
+    color: black;
+    font-family: @accordion-heading-font;
+    padding: 4px 15px;
+    background: @accordion-toggle-background;
+    &:hover,
+    &.active,
+    &.active:hover {
+      font-weight: bold;
+      color: @white;
+      text-decoration: none;
+      background: @accordion-toggle-background-active;
+    }
+    // "down" chevrons for toggles
+    .toggle-chevron:before {
+      float: right;
+      display: inline-block;
+      content: "\e114";
+      font-size: 10px;
+      font-family: 'Glyphicons Halflings';
+      font-weight: bold;
+      font-style: normal;
+      color: rgba(0,0,0,.3);
+      padding-left: 10px;
+    }
+    &:hover .toggle-chevron:before {
+      text-decoration: none;
+    }
+    // "up" chevron, when toggle is active
+    &.active .toggle-chevron:before,
+    &.active:hover .toggle-chevron:before {
+      content: "\e113";
+      color: @white;
+    }
+  }
+}
+
+
+// Sections
+// ---------------
+
+// Add section headings in a panel
 .accordion-section {
   display: block;
   font-size: @font-size-base;
@@ -73,6 +120,7 @@
   padding: 3px 0 5px;
   margin-top: 6px;
   border-top: 1px solid #ddd;
+  // Collapse section completely when content is absent
   &:empty {
     display: none;
   }
@@ -80,12 +128,18 @@
 .accordion-title + .accordion-section {
   border-top: none;
 }
-// Inner needs the styles because you can't animate properly with any styles on the element
+
+
+
+// Inner needs the styles because you can't
+// animate properly with any styles on the element
 .accordion-inner {
   font-weight: normal;
   background: @state-info-background;
   border-top: 1px solid @accordion-group-border;
-  .summary {
+
+  // Content summary
+  .topic-summary {
     display: block;
     color: #075d8d;
     margin: -10px -15px 10px;
@@ -93,57 +147,15 @@
     background: #bee1e4;
   }
 }
+// Reset margins for dd
+.accordion-body {
+  margin: 0;
+}
+
+
 
 // Reduce transition on collapse/expand, but you don't remove it
 // completely because of how the js was written
 .collapse {
   .transition(height .08s ease);
 }
-
-// "Down" chevrons for toggles
-.accordion-toggle .toggle-chevron:before {
-  float: right;
-  display: inline-block;
-  content: "\e114";
-  font-size: 10px;
-  font-family: 'Glyphicons Halflings';
-  font-weight: bold;
-  font-style: normal;
-  padding-left: 10px;
-  color: rgba(0,0,0,.3);
-}
-.accordion-toggle:hover .toggle-chevron:before {
-  text-decoration: none;
-}
-// When toggle is active, switch to "up" chevron
-.accordion-toggle.active .toggle-chevron:before,
-.accordion-toggle.active:hover .toggle-chevron:before {
-  display: inline-block;
-  content: "\e113";
-  color: @white;
-}
-
-
-// Buttons and labels
-.label {
-  margin-top: 1px;
-}
-
-
-
-.btn-mini {
-  background-color: rgba(45,176,218,.25);
-  border-color: rgba(45,176,218,.25);
-  color: #167aaa;
-  margin-top: -3px;
-  &:hover {
-    background-color: #2db0da;
-    border-color: #2db0da;
-    color: @white;
-  }
-}
-// Empty buttons collapse
-.btn-mini:empty {
-  display: none;
-}
-
