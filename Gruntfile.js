@@ -18,7 +18,7 @@ module.exports = function(grunt) {
     // Build static files from templates and data.
     assemble: {
       options: {
-        helpers: '<%= config.helpers.handlebars %>',
+        helpers: '<%= config.helpers %>',
         assets: 'assets'
       },
       pages: {
