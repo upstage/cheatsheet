@@ -1,7 +1,7 @@
 {
   "name": "cheatsheet",
   "description": "Cheatsheet boilerplate. Created for the new lesscss.org website, based on Shopify Cheat Sheet by Mark Dunkley.",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "author": "Jon Schlinkert",
   "repository": {
     "type": "git",

@@ -46,6 +46,6 @@ As with most Upstage components, _cheatsheet_ is designed as a drop-in for [Boot
 MIT Licensed
 
 
-[demo]: http://github.com/upstage/cheatsheet/
+[demo]: http://upstage.github.com/cheatsheet/
 [issues]: http://github.com/upstage/cheatsheet/issues
 [upstage-issues]: http://github.com/upstage/upstage/issues
