@@ -1,0 +1,5 @@
+``` less
+@charset "UTF-8";
+
+@import "import/import-charset-test";
+```
