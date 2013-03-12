@@ -13,33 +13,36 @@ module.exports = function(grunt) {
 
   // Project configuration.
   grunt.initConfig({
-    config:     grunt.file.readJSON('config.json'),
+    config: grunt.file.readJSON('src/config.json'),
+
 
     // Build static files from templates and data.
     assemble: {
       options: {
         helpers: '<%= config.helpers %>',
-        assets: 'assets'
+        assets: 'docs/assets'
       },
       pages: {
         options: {
           layout  : 'src/templates/layouts/default.hbs',
           partials: 'src/templates/partials/**/*.hbs',
-          data    : ['src/data/cheatsheet.json', 'config.json']
+          data    : ['src/data/cheatsheet.json', 'src/config.json']
         },
         files: {
-          '.' : [ 'src/templates/pages/cheatsheet.hbs' ]
+          'docs' : [ 'src/templates/pages/cheatsheet.hbs' ]
         }
       }
     },
+
+
     less: {
       compile: {
         options: {
           paths: [ 'src/styles', 'src/styles/bootstrap']
         },
         files: {
-          'assets/css/cheatsheet.css': ['src/styles/cheatsheet.less'],
-          'assets/js/prettify/prettify.css': ['src/styles/components/prettify.less']
+          'docs/assets/css/cheatsheet.css': ['src/styles/cheatsheet.less'],
+          'docs/assets/js/prettify/prettify.css': ['src/styles/components/prettify.less']
         }
       }
     },

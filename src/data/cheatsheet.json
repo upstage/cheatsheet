@@ -47,7 +47,7 @@
               "accordion-title": "Mixins",
               "accordion-groups": [
                 {
-                  "topic-name": "Basic",
+                  "topic-name": "Implicit",
                   "topic-summary": "This is a summary",
                   "topic-href": "<%= _.uniqueId('toggle') %>",
                   "label": false,

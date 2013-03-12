@@ -1,26 +1,21 @@
 {
-  "name": "toolkit-cheatsheet",
+  "name": "cheatsheet",
   "description": "Cheatsheet boilerplate. Created for the new lesscss.org website, based on Shopify Cheat Sheet by Mark Dunkley.",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "author": "Jon Schlinkert",
-  "contributors": [
-    {
-      "name": "Jon Schlinkert",
-      "url": "http://github.com/jonschlinkert"
-    }
-  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/assemble/toolkit-cheatsheet.git"
+    "url": "https://github.com/upstage/cheatsheet.git"
   },
   "bugs": {
-    "url": "https://github.com/assemble/toolkit-cheatsheet/issues"
+    "url": "https://github.com/upstage/cheatsheet/issues"
   },
   "engines": {
     "node": ">= 0.8.0"
   },
   "devDependencies": {
-    "assemble": "0.3.81",
+    "assemble": "0.3.9",
+    "assemble-styles": "0.2.0",
     "grunt": "0.4.0",
     "grunt-contrib-copy": "0.4.0",
     "grunt-contrib-less": "0.5.0",
@@ -29,17 +24,20 @@
   },
   "keywords": [
     "assemble",
-    "boilerplate",
-    "boilerplates",
-    "bootstrap",
-    "build system",
-    "build",
-    "builder",
+    "LESS",
+    "less css",
+    "sample cheatsheet",
+    "cheat sheet example",
+    "cheat sheet examples",
+    "github cheatsheet",
+    "markdown cheatsheet",
+    "handlebars cheatsheet",
+    "mustache cheatsheet",
+    "YAML cheatsheet",
     "cheatsheet",
     "cheat sheet",
-    "component",
+    "UI component",
     "components",
-    "conventions",
     "docs",
     "documentation",
     "framework",
@@ -54,6 +52,6 @@
     "theme",
     "themes",
     "theming",
-    "toolkit"
+    "upstage"
   ]
 }
