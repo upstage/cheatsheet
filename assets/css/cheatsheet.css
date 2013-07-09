@@ -9,54 +9,566 @@ body {
   }
 }
 .container-fluid {
-  margin: 0 10px;
+  margin: 0 30px;
+}
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../fonts/glyphiconshalflings-regular.eot');
+  src: url('../fonts/glyphiconshalflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphiconshalflings-regular.woff') format('woff'), url('../fonts/glyphiconshalflings-regular.ttf') format('truetype'), url('../fonts/glyphiconshalflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+.glyphicon:before {
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+.glyphicon-glass:before {
+  content: "\e001";
+}
+.glyphicon-music:before {
+  content: "\e002";
+}
+.glyphicon-search:before {
+  content: "\e003";
+}
+.glyphicon-envelope:before {
+  content: "\2709";
+}
+.glyphicon-heart:before {
+  content: "\e005";
+}
+.glyphicon-star:before {
+  content: "\e006";
+}
+.glyphicon-star-empty:before {
+  content: "\e007";
+}
+.glyphicon-user:before {
+  content: "\e008";
+}
+.glyphicon-film:before {
+  content: "\e009";
+}
+.glyphicon-th-large:before {
+  content: "\e010";
+}
+.glyphicon-th:before {
+  content: "\e011";
+}
+.glyphicon-th-list:before {
+  content: "\e012";
+}
+.glyphicon-ok:before {
+  content: "\e013";
+}
+.glyphicon-remove:before {
+  content: "\e014";
+}
+.glyphicon-zoom-in:before {
+  content: "\e015";
+}
+.glyphicon-zoom-out:before {
+  content: "\e016";
+}
+.glyphicon-off:before {
+  content: "\e017";
+}
+.glyphicon-signal:before {
+  content: "\e018";
+}
+.glyphicon-cog:before {
+  content: "\e019";
+}
+.glyphicon-trash:before {
+  content: "\e020";
+}
+.glyphicon-home:before {
+  content: "\e021";
+}
+.glyphicon-file:before {
+  content: "\e022";
+}
+.glyphicon-time:before {
+  content: "\e023";
+}
+.glyphicon-road:before {
+  content: "\e024";
+}
+.glyphicon-download-alt:before {
+  content: "\e025";
+}
+.glyphicon-download:before {
+  content: "\e026";
+}
+.glyphicon-upload:before {
+  content: "\e027";
+}
+.glyphicon-inbox:before {
+  content: "\e028";
+}
+.glyphicon-play-circle:before {
+  content: "\e029";
+}
+.glyphicon-repeat:before {
+  content: "\e030";
+}
+.glyphicon-refresh:before {
+  content: "\e031";
+}
+.glyphicon-list-alt:before {
+  content: "\e032";
+}
+.glyphicon-lock:before {
+  content: "\e033";
+}
+.glyphicon-flag:before {
+  content: "\e034";
+}
+.glyphicon-headphones:before {
+  content: "\e035";
+}
+.glyphicon-volume-off:before {
+  content: "\e036";
+}
+.glyphicon-volume-down:before {
+  content: "\e037";
+}
+.glyphicon-volume-up:before {
+  content: "\e038";
+}
+.glyphicon-qrcode:before {
+  content: "\e039";
+}
+.glyphicon-barcode:before {
+  content: "\e040";
+}
+.glyphicon-tag:before {
+  content: "\e041";
+}
+.glyphicon-tags:before {
+  content: "\e042";
+}
+.glyphicon-book:before {
+  content: "\e043";
+}
+.glyphicon-bookmark:before {
+  content: "\e044";
+}
+.glyphicon-print:before {
+  content: "\e045";
+}
+.glyphicon-camera:before {
+  content: "\e046";
+}
+.glyphicon-font:before {
+  content: "\e047";
+}
+.glyphicon-bold:before {
+  content: "\e048";
+}
+.glyphicon-italic:before {
+  content: "\e049";
+}
+.glyphicon-text-height:before {
+  content: "\e050";
+}
+.glyphicon-text-width:before {
+  content: "\e051";
+}
+.glyphicon-align-left:before {
+  content: "\e052";
+}
+.glyphicon-align-center:before {
+  content: "\e053";
+}
+.glyphicon-align-right:before {
+  content: "\e054";
+}
+.glyphicon-align-justify:before {
+  content: "\e055";
+}
+.glyphicon-list:before {
+  content: "\e056";
+}
+.glyphicon-indent-left:before {
+  content: "\e057";
+}
+.glyphicon-indent-right:before {
+  content: "\e058";
+}
+.glyphicon-facetime-video:before {
+  content: "\e059";
+}
+.glyphicon-picture:before {
+  content: "\e060";
+}
+.glyphicon-pencil:before {
+  content: "\270f";
+}
+.glyphicon-map-marker:before {
+  content: "\e062";
+}
+.glyphicon-adjust:before {
+  content: "\e063";
+}
+.glyphicon-tint:before {
+  content: "\e064";
+}
+.glyphicon-edit:before {
+  content: "\e065";
+}
+.glyphicon-share:before {
+  content: "\e066";
+}
+.glyphicon-check:before {
+  content: "\e067";
+}
+.glyphicon-move:before {
+  content: "\e068";
+}
+.glyphicon-step-backward:before {
+  content: "\e069";
+}
+.glyphicon-fast-backward:before {
+  content: "\e070";
+}
+.glyphicon-backward:before {
+  content: "\e071";
+}
+.glyphicon-play:before {
+  content: "\e072";
+}
+.glyphicon-pause:before {
+  content: "\e073";
+}
+.glyphicon-stop:before {
+  content: "\e074";
+}
+.glyphicon-forward:before {
+  content: "\e075";
+}
+.glyphicon-fast-forward:before {
+  content: "\e076";
+}
+.glyphicon-step-forward:before {
+  content: "\e077";
+}
+.glyphicon-eject:before {
+  content: "\e078";
+}
+.glyphicon-chevron-left:before {
+  content: "\e079";
+}
+.glyphicon-chevron-right:before {
+  content: "\e080";
+}
+.glyphicon-plus-sign:before {
+  content: "\e081";
+}
+.glyphicon-minus-sign:before {
+  content: "\e082";
+}
+.glyphicon-remove-sign:before {
+  content: "\e083";
+}
+.glyphicon-ok-sign:before {
+  content: "\e084";
+}
+.glyphicon-question-sign:before {
+  content: "\e085";
+}
+.glyphicon-info-sign:before {
+  content: "\e086";
+}
+.glyphicon-screenshot:before {
+  content: "\e087";
+}
+.glyphicon-remove-circle:before {
+  content: "\e088";
+}
+.glyphicon-ok-circle:before {
+  content: "\e089";
+}
+.glyphicon-ban-circle:before {
+  content: "\e090";
+}
+.glyphicon-arrow-left:before {
+  content: "\e091";
+}
+.glyphicon-arrow-right:before {
+  content: "\e092";
+}
+.glyphicon-arrow-up:before {
+  content: "\e093";
+}
+.glyphicon-arrow-down:before {
+  content: "\e094";
+}
+.glyphicon-share-alt:before {
+  content: "\e095";
+}
+.glyphicon-resize-full:before {
+  content: "\e096";
+}
+.glyphicon-resize-small:before {
+  content: "\e097";
+}
+.glyphicon-plus:before {
+  content: "\002b";
+}
+.glyphicon-minus:before {
+  content: "\2212";
+}
+.glyphicon-asterisk:before {
+  content: "\002a";
+}
+.glyphicon-exclamation-sign:before {
+  content: "\e101";
+}
+.glyphicon-gift:before {
+  content: "\e102";
+}
+.glyphicon-leaf:before {
+  content: "\e103";
+}
+.glyphicon-fire:before {
+  content: "\e104";
+}
+.glyphicon-eye-open:before {
+  content: "\e105";
+}
+.glyphicon-eye-close:before {
+  content: "\e106";
+}
+.glyphicon-warning-sign:before {
+  content: "\e107";
+}
+.glyphicon-plane:before {
+  content: "\e108";
+}
+.glyphicon-calendar:before {
+  content: "\e109";
+}
+.glyphicon-random:before {
+  content: "\e110";
+}
+.glyphicon-comment:before {
+  content: "\e111";
+}
+.glyphicon-magnet:before {
+  content: "\e112";
+}
+.glyphicon-chevron-up:before {
+  content: "\e113";
+}
+.glyphicon-chevron-down:before {
+  content: "\e114";
+}
+.glyphicon-retweet:before {
+  content: "\e115";
+}
+.glyphicon-shopping-cart:before {
+  content: "\e116";
+}
+.glyphicon-folder-close:before {
+  content: "\e117";
+}
+.glyphicon-folder-open:before {
+  content: "\e118";
+}
+.glyphicon-resize-vertical:before {
+  content: "\e119";
+}
+.glyphicon-resize-horizontal:before {
+  content: "\e120";
+}
+.glyphicon-hdd:before {
+  content: "\e121";
+}
+.glyphicon-bullhorn:before {
+  content: "\e122";
+}
+.glyphicon-bell:before {
+  content: "\e123";
+}
+.glyphicon-certificate:before {
+  content: "\e124";
+}
+.glyphicon-thumbs-up:before {
+  content: "\e125";
+}
+.glyphicon-thumbs-down:before {
+  content: "\e126";
+}
+.glyphicon-hand-right:before {
+  content: "\e127";
+}
+.glyphicon-hand-left:before {
+  content: "\e128";
+}
+.glyphicon-hand-up:before {
+  content: "\e129";
+}
+.glyphicon-hand-down:before {
+  content: "\e130";
+}
+.glyphicon-circle-arrow-right:before {
+  content: "\e131";
+}
+.glyphicon-circle-arrow-left:before {
+  content: "\e132";
+}
+.glyphicon-circle-arrow-up:before {
+  content: "\e133";
+}
+.glyphicon-circle-arrow-down:before {
+  content: "\e134";
+}
+.glyphicon-globe:before {
+  content: "\e135";
+}
+.glyphicon-wrench:before {
+  content: "\e136";
+}
+.glyphicon-tasks:before {
+  content: "\e137";
+}
+.glyphicon-filter:before {
+  content: "\e138";
+}
+.glyphicon-briefcase:before {
+  content: "\e139";
+}
+.glyphicon-fullscreen:before {
+  content: "\e140";
+}
+.glyphicon-dashboard:before {
+  content: "\e141";
+}
+.glyphicon-paperclip:before {
+  content: "\e142";
+}
+.glyphicon-heart-empty:before {
+  content: "\e143";
+}
+.glyphicon-link:before {
+  content: "\e144";
+}
+.glyphicon-phone:before {
+  content: "\e145";
+}
+.glyphicon-pushpin:before {
+  content: "\e146";
+}
+.glyphicon-euro:before {
+  content: "\20ac";
+}
+.glyphicon-usd:before {
+  content: "\e148";
+}
+.glyphicon-gbp:before {
+  content: "\e149";
+}
+.glyphicon-sort:before {
+  content: "\e150";
+}
+.glyphicon-sort-by-alphabet:before {
+  content: "\e151";
+}
+.glyphicon-sort-by-alphabet-alt:before {
+  content: "\e152";
+}
+.glyphicon-sort-by-order:before {
+  content: "\e153";
+}
+.glyphicon-sort-by-order-alt:before {
+  content: "\e154";
+}
+.glyphicon-sort-by-attributes:before {
+  content: "\e155";
+}
+.glyphicon-sort-by-attributes-alt:before {
+  content: "\e156";
+}
+.glyphicon-unchecked:before {
+  content: "\e157";
+}
+.glyphicon-expand:before {
+  content: "\e158";
+}
+.glyphicon-collapse:before {
+  content: "\e159";
+}
+.glyphicon-collapse-top:before {
+  content: "\e160";
+}
+:target {
+  border: 1px solid #ffbb33;
+  -webkit-animation: target 1s ease;
+  -moz-animation: target 1s ease;
+  animation: target 1s ease;
+}
+@-webkit-keyframes target {
+  from {
+    background: #ffffff;
+  }
+  50% {
+    background: #ffbb33;
+    border: 1px solid #ffbb33;
+  }
+  to {
+    background: #ffffff;
+  }
+}
+@-moz-keyframes target {
+  from {
+    background: #ffffff;
+  }
+  50% {
+    background: #ffbb33;
+    border: 1px solid #ffbb33;
+  }
+  to {
+    background: #ffffff;
+  }
+}
+.accordion {
+  margin-bottom: 0.7142857145;
 }
 .accordion-panel {
+  font-size: 12px;
   min-height: 20px;
   padding: 9px;
   margin-bottom: 20px;
   background-color: #f9f9f9;
   border: 1px solid #e7e7e7;
-  border-radius: 3px;
-}
-.accordion {
-  margin-bottom: 0.7142857145;
-  font-size: 12px;
-}
-.accordion-group {
-  margin: 0;
-  border: 1px solid #e1e1e1;
   border-radius: 0;
 }
-.accordion-group + .accordion-group {
-  border-top: none;
-}
 .accordion-title {
-  font-family: "proxima-nova", "dejarip", "franklin-gothic-urw", "museo-sans", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 600;
-  margin-top: 0;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 4px;
-  margin-bottom: 4px;
+  margin-top: 2px;
 }
 .accordion-heading {
-  margin: 0;
+  display: block;
   font-weight: normal;
+  margin: 0;
   border-bottom: none;
 }
 .accordion-heading .accordion-toggle {
-  color: black;
+  display: block;
+  color: #333333;
   font-family: "proxima-nova", "dejarip", "franklin-gothic-urw", "museo-sans", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  padding: 4px 15px;
+  padding: 6px 15px;
   background: #eeeeee;
 }
 .accordion-heading .accordion-toggle:hover,
 .accordion-heading .accordion-toggle.active,
 .accordion-heading .accordion-toggle.active:hover {
   font-weight: bold;
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
-  background: #2db0da;
+  background: #00bbff;
 }
 .accordion-heading .accordion-toggle .toggle-chevron:before {
   float: right;
@@ -75,16 +587,23 @@ body {
 .accordion-heading .accordion-toggle.active .toggle-chevron:before,
 .accordion-heading .accordion-toggle.active:hover .toggle-chevron:before {
   content: "\e113";
-  color: #ffffff;
+  color: #fff;
+}
+.accordion-group {
+  margin: 0;
+  border: 1px solid #e1e1e1;
+  border-radius: 0;
+  display: block;
+}
+.accordion-group + .accordion-group {
+  border-top: none;
 }
 .accordion-section {
   display: block;
   font-size: 14px;
   font-family: "proxima-nova", "dejarip", "franklin-gothic-urw", "museo-sans", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #444;
-  padding: 3px 0 5px;
-  margin-top: 6px;
-  border-top: 1px solid #ddd;
+  padding: 8px 0;
 }
 .accordion-section:empty {
   display: none;
@@ -94,10 +613,12 @@ body {
 }
 .accordion-inner {
   font-weight: normal;
+  padding: 9px 15px;
   background: #d9edf7;
   border-top: 1px solid #e1e1e1;
 }
-.accordion-inner .topic-summary {
+.accordion-inner .topic-summary,
+.accordion-inner blockquote {
   display: block;
   color: #075d8d;
   margin: -10px -15px 10px;
@@ -107,19 +628,27 @@ body {
 .accordion-body {
   margin: 0;
 }
-.collapse {
-  -webkit-transition: height 0.08s ease;
-  -moz-transition: height 0.08s ease;
-  -o-transition: height 0.08s ease;
-  transition: height 0.08s ease;
+blockquote {
+  border-left: none;
+}
+blockquote,
+blockquote p {
+  font-size: 13px;
+  font-weight: normal;
+}
+.accordion pre + blockquote {
+  margin-top: 25px;
+}
+.accordion blockquote + p {
+  margin-top: 15px;
 }
 .label {
   display: inline-block;
-  margin-top: 1px;
+  margin-top: -1px;
   padding: 3px 6px 2px;
   font-size: 12px;
   line-height: 14px;
-  color: #ffffff;
+  color: #fff;
   vertical-align: baseline;
   white-space: nowrap;
   background-color: #999999;
@@ -133,82 +662,41 @@ body {
   display: none;
 }
 .label-important {
-  background-color: #b94a48;
+  background-color: #ff4444;
 }
 .label-warning {
-  background-color: #dd791d;
+  background-color: #ffbb33;
 }
 .label-success {
-  background-color: #378d0e;
+  background-color: #99cc00;
 }
 .label-info {
-  background-color: #1c7f9f;
-}
-.label-inverse {
-  background-color: #333333;
+  background-color: #aa66cc;
 }
 .btn .label {
   position: relative;
   top: -1px;
 }
-.btn-mini .label {
-  top: 0;
-}
-.btn-mini {
-  background-color: rgba(45, 176, 218, 0.25);
-  border-color: rgba(45, 176, 218, 0.25);
+.btn-docs {
   color: #167aaa;
+  padding: 2px 9px;
   margin-top: -3px;
+  background-color: rgba(45, 176, 218, 0.25);
+  border: 1px solid rgba(45, 176, 218, 0.25);
+  border-radius: 3px;
+  float: right;
 }
-.btn-mini:hover {
+.btn-docs:hover {
+  color: #fff;
+  text-decoration: none;
   background-color: #2db0da;
   border-color: #2db0da;
-  color: #ffffff;
 }
-.btn-mini:empty {
+.btn-docs .label {
+  top: 0;
+}
+.btn-docs:empty {
   display: none;
-}
-code {
-  padding: 2px 4px;
-  font-size: 90%;
-  color: #c7254e;
-  white-space: nowrap;
-  background-color: #f9f2f4;
-}
-pre {
-  display: block;
-  padding: 9.5px;
-  margin: 0 0 10px;
-  font-size: 13px;
-  line-height: 20px;
-  word-break: break-all;
-  word-wrap: break-word;
-  white-space: pre;
-  white-space: pre-wrap;
-  background-color: #f5f5f5;
-  border: 1px solid #ccc;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-}
-pre.prettyprint {
-  margin-bottom: 0;
-}
-.code-example,
-.compiled-result {
-  display: block;
-  color: #ffffff;
-  margin-top: 10px;
-  background: #555555;
-  border: none;
-  border-radius: 0;
-}
-.compiled-result {
-  margin: 0;
-  padding: 6px 12px;
-  background: #333333;
-}
-.compiled-result p {
-  margin: 0;
 }
 code,
 pre {
@@ -216,10 +704,10 @@ pre {
   font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
   font-size: 12px;
   color: #333333;
-  border-radius: 3px;
+  border-radius: 0;
 }
-.label-code,
-code {
+code,
+.label-code {
   padding: 2px 4px;
   color: #d14;
   background-color: #f7f7f9;
@@ -227,19 +715,9 @@ code {
   white-space: nowrap;
 }
 pre {
-  display: block;
-  padding: 0.2142857145;
+  padding: 15px;
   margin: 0 0 0.7142857145;
-  font-size: 13px;
-  line-height: 1.428571429;
-  word-break: break-all;
-  word-wrap: break-word;
-  white-space: pre;
-  white-space: pre-wrap;
-  background-color: #f5f5f5;
-  border: 1px solid #ccc;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+  background-color: #f7f7f9;
 }
 pre.prettyprint {
   margin-bottom: 1.428571429;
@@ -255,4 +733,39 @@ pre code {
 .pre-scrollable {
   max-height: 340px;
   overflow-y: scroll;
+}
+pre.prettyprint {
+  margin-bottom: 0;
+}
+.raw-example,
+.compiled-example {
+  display: block;
+  color: #fff;
+  margin-top: 10px;
+  background: #555555;
+  border: none;
+  border-radius: 0;
+}
+.compiled-example {
+  margin: 0;
+  padding: 6px 12px;
+  background: #333333;
+}
+.compiled-example p {
+  margin: 0;
+}
+body {
+  min-height: 1300px;
+}
+.navbar-nav.pull-right {
+  margin-right: -15px;
+}
+.navbar-brand {
+  padding: 15px 0;
+  max-width: 250px;
+}
+.nav-pills > li > a,
+.nav-pills > li > a:hover {
+  color: #fff;
+  background: #00bbff;
 }
